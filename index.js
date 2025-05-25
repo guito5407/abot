@@ -30,22 +30,29 @@ var LNM = 0
 var LIV = true
 
 client.on("ready", () => {
-  client.user.setActivity(`Creado por Guito 🤓`, {type: "PLAYING"});
-  console.log("Ando activo papi")
-  
-  const Lchannel = client.channels.cache.get("1103166487117713558");
-function Main(delay) {
-  setInterval(()=> {
-      if(LIV === true){
-         Lchannel.send(`Iniciando el conteo en 10 segundos, el bot acaba de ser encendido. || <@940744356376248320> ||`);
-        LIV = false
-      } else {        
-        LNM += 10
-        Lchannel.send(`${LNM} segundos`)
-      }
-  }, delay)
-}
-  Main(10000)
+    console.log(`¡Bot encendido!`);
+
+    const Lchannel = client.channels.cache.get("1103166487117713558");
+    var LNM = 0
+
+    function Main(delay) {
+        setInterval(() => {
+            LNM += 10;
+            const tiempoTranscurrido = LNM;
+            const dias = Math.floor(tiempoTranscurrido / (60 * 60 * 24));
+            const horas = Math.floor((tiempoTranscurrido % (60 * 60 * 24)) / (60 * 60));
+            const minutos = Math.floor((tiempoTranscurrido % (60 * 60)) / 60);
+            const segundos = tiempoTranscurrido % 60;
+            let mensaje = '';
+            if (dias > 0) mensaje += `${dias} día${dias !== 1 ? 's' : ''}, `;
+            if (horas > 0 || dias > 0) mensaje += `${horas} hora${horas !== 1 ? 's' : ''}, `;
+            if (minutos > 0 || horas > 0 || dias > 0) mensaje += `${minutos} minuto${minutos !== 1 ? 's' : ''}, `;
+            if (segundos > 0 || horas > 0 || dias > 0 || minutos > 0) mensaje += `${segundos} segundo${segundos !== 1 ? 's' : ''}`;
+            Lchannel.send(mensaje);
+        }, delay);
+    }
+    Lchannel.send(`Iniciando el conteo, el bot acaba de ser encendido. || <@940744356376248320> ||`);
+    Main(10000);
 });
 
 client.Pcommands = new Discord.Collection();
