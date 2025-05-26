@@ -49,7 +49,7 @@ module.exports = {
         { valor: 4, probabilidad: 0.04 }
       ]
       var resultado = randomChoose(resultados);
-        roll = a[Math.floor(Math.random() * a.length)];
+      roll = a[Math.floor(Math.random() * a.length)];
       if (active && UD.magia) {
         if (roll === 1) {
           a.shift()
@@ -83,8 +83,7 @@ ${jajas[resultado - 1].gif}`,
       collector.on('collect', i => {
         if (i.user.id === message.author.id) {
           var option = magias[resultado - 1][Math.floor(Math.random() * magias[resultado - 1].length)];
-          if (active && UD.magia && resultado === UD.magia.grado + 1) {
-            message.channel.send('aea')
+          if (active && UD.magia && resultado === UD.magia.grado && roll === 2) {
             option = magias[resultado - 1][UD.magia.indice]
             UD.activado = false;
           }
