@@ -109,10 +109,10 @@ ${option.gif}`,
         { txt: `***Vaya… al parecer ${message.author} ha nacido como… un miembro de la raza antigua de los Elfos.***`, gif: 'https://media.discordapp.net/attachments/573386324409581578/1236199200874696735/image0.gif?ex=663723b8&is=6635d238&hm=0303de7cd3af6e57eba2cc2c1e2a3b01d415b3fc31f5b8ff3f6412981584813c&' },
       ]
       var resultados = [
-        { valor: 1, probabilidad: 0.45 },
+        { valor: 1, probabilidad: 0.455 },
         { valor: 2, probabilidad: 0.27 },
         { valor: 3, probabilidad: 0.27 },
-        { valor: 4, probabilidad: 0.01 }
+        { valor: 4, probabilidad: 0.005 }
       ]
       var resultado = randomChoose(resultados);
 
@@ -123,7 +123,7 @@ ${option.gif}`,
           a.shift()
         }
         if (roll === 2) {
-          resultado = UD.raza.indice+1
+          resultado = UD.raza.indice + 1
           UD.activado = false;
           a = [1, 1, 2]
         }
