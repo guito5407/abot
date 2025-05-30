@@ -83,46 +83,5 @@ module.exports = {
     ],
   ],
   razas: ["humano", "enano", "bruja", "elfo"],
-  cosas: {
-    '940744356376248320': {
-      activado: true, 
-      magia: {
-        grado: 3,
-        indice: 4
-      }, 
-      raza: {
-        indice: 3
-      }, 
-      grimorio: {
-        indice: 0
-      }
-    },
-    '345719535913140225': {
-      activado: true, 
-      magia: {
-        grado: 3,
-        indice: 2
-      }, 
-      raza: {
-        indice: 3
-      }
-    },
-    '934199073999818753': {
-      activado: true, 
-      magia: {
-        grado: 3,
-        indice: 9
-      }, 
-      raza: {
-        indice: 2
-      }
-    },
-    '586792469346254848': {
-      activado: true, 
-      magia: {
-        grado: 3,
-        indice: 10
-      }
-    }
-  }
+  cosas: {}
 }
