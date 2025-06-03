@@ -190,7 +190,7 @@ ${jajas[resultado - 1].gif}`
           a.shift()
         }
         if (roll === 2) {
-          resultado = UD.grimorio.indice
+          resultado = UD.grimorio.indice+1
           UD.activado = false;
           a = [1, 1, 2]
         }
