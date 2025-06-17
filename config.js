@@ -59,7 +59,7 @@ module.exports = {
       { txt: 'has nacido con la Magia de Plantas reconocida por su gran apoyo mágico.', gif: 'https://media.discordapp.net/attachments/1121181504987471904/1127493543347359884/Magia_de_Plantas.gif?ex=66372db0&is=6635dc30&hm=b645d59ed9b3f8fb33c8b422a5bcc11b3924e0afac4289c1b221dc73ea83c7b4&' },
       { txt: 'has nacido con la Magia Ice Wedge siendo una versión mejorada del Hielo.', gif: 'https://media.discordapp.net/attachments/1121181504987471904/1127501985537589268/Magia_Ice_Wedge.gif?ex=6637358d&is=6635e40d&hm=3c972798b89867df43562d0589d404d29128acb4a5b4fbf4277feb983ff790c9&' },
       { txt: 'has nacido con la increíble Magia de Espinas.', gif: 'https://media.discordapp.net/attachments/1121181504987471904/1185737467035394220/image0.gif?ex=6636d012&is=66357e92&hm=bc4a8250f95643420581e7cd94132f8460ad802d540d7fda5f80e0f48feb231c&' },
-      { txt: 'al parecer… has nacido con la extraña y poderosa Magia de Espacio (- Capacidad Ofensiva)', gif: 'https://media.discordapp.net/attachments/573386324409581578/1236235054615760997/image0.gif?ex=6637451d&is=6635f39d&hm=0f8d22855b2824545d868ddbf24e2eafcdeb57c49dd5b8e88ceb1c7b4904be6c&' },
+      { txt: 'al parecer… has nacido con la extraña y poderosa Magia de Espacio (sin capacidad Ofensiva)', gif: 'https://media.discordapp.net/attachments/573386324409581578/1236235054615760997/image0.gif?ex=6637451d&is=6635f39d&hm=0f8d22855b2824545d868ddbf24e2eafcdeb57c49dd5b8e88ceb1c7b4904be6c&' },
     ],
     [
       { txt: 'has nacido con la Magia de Corte siendo capaz de cortar cualquier obstáculo en tu camino.', gif: 'https://media.discordapp.net/attachments/1121181504987471904/1127510902837620806/Magia_de_Corte.gif?ex=6636951b&is=6635439b&hm=908c20dd0ce3f4d829099d87e9ec9150c1d68a42f69ccead68c31e4fb4038cdc&' },
@@ -80,7 +80,7 @@ module.exports = {
       { txt: 'has nacido con la poderosa y asombrosa Magia del Árbol del Mundo.', gif: 'https://media.discordapp.net/attachments/1121181504987471904/1127839684941332520/Magia_del_Arbol_del_Mundo.gif?ex=66371e8f&is=6635cd0f&hm=dab9a42f4f5506eedb2a676e0af51d36d05f841575dd3c86ba7811946398ca55&' },
       { txt: 'has nacido con la Magia de Imitación siendo capaz de contener un arsenal de hechizos.', gif: 'https://media.discordapp.net/attachments/1121181504987471904/1186443650121617571/image0.gif?ex=6636bec1&is=66356d41&hm=53919f21029521aa870c088a9748d125321f22265c079a202f3abd3ae952758a&' },
       { txt: 'has nacido con la asombrosa y aterradora Magia de Barreras.', gif: 'https://media.discordapp.net/attachments/573386324409581578/1236215452569436200/image0.gif?ex=663732db&is=6635e15b&hm=1f8cad346a32860a50922ba1a321dbeac9f06e275a97e2de91fe92d9d4709fd5&' },
-      { txt: 'has nacido con la extraña y aterradora Magia de Espacio (+Capacidad Ofensiva).', gif: 'https://media.discordapp.net/attachments/573386324409581578/1236233711272591360/image0.gif?ex=663743dc&is=6635f25c&hm=ad80c60897cf46e8865ec0095c891daa5fa69c6a393ccc726df5136f85445f7b&' },
+      { txt: 'has nacido con la extraña y aterradora Magia de Espacio (con capacidad Ofensiva).', gif: 'https://media.discordapp.net/attachments/573386324409581578/1236233711272591360/image0.gif?ex=663743dc&is=6635f25c&hm=ad80c60897cf46e8865ec0095c891daa5fa69c6a393ccc726df5136f85445f7b&' },
     ],
   ],
   razas: ["humano", "enano", "bruja", "elfo"],
