@@ -99,6 +99,8 @@ client.on("messageCreate", async (message) => {
       if (cmd.tipo.toLowerCase() === 'developer') {
         if (!config.developers.includes(message.author.id)) return;
       }
+      if (cmd.tipo.toLowerCase() === 'admin' && !message.member.permissions.has('Administrator')) return; 
+      if(cmd.nombre !== 'pausar' && config.pausado) return;
       cmd.run({ client, message, args, Discord, config }).catch(error => {
         console.error(error);
         return null;
