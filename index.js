@@ -1,9 +1,10 @@
-const { Client } = require('discord.js-selfbot-v13');
+const { Client } = require("discord.js-selfbot-v14");
 const cron = require("node-cron");
 const keep_alive = require('./keep_alive.js');
 
 const client = new Client({
-    checkUpdate: false
+    checkUpdate: false,
+    intents: []
 });
 
 client.on('ready', async () => {
